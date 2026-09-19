@@ -1,3 +1,6 @@
+# Escreva um programa em Python que simule um menu de calculadora.
+
+
 def soma():
     num1 = float(input("Digite o primeiro número: "))
     num2 = float(input("Digite o segundo número: "))
@@ -26,11 +29,11 @@ def divisao():
     print(f"Resultado: {resultado}")
 
 def pares():
-    
+
     numero = 1
     contador = 0
     qtd = int(input("Digite a quantidade de vezes que você deseja a impressão desses pares: "))
-   
+
     while contador < qtd:
         if (numero % 2 == 0):
             print(numero)
@@ -38,11 +41,11 @@ def pares():
         numero += 1
 
 def impares():
-    
+
     numero = 1
     contador = 0
     qtd = int(input("Digite a quantidade de vezes que você deseja a impressão desses ímpares: "))
-    
+
     while contador < qtd:
         if (numero % 2 != 0):
             print(numero)
@@ -50,19 +53,19 @@ def impares():
         numero += 1
 
 def somatorio():
-    
+
     numeros = 1
     somatorio = 0
     numero_max = int(input("Digite a quantidade de vezes que você deseja o somatório: "))
-    
+
     while numeros <= numero_max:
         somatorio = somatorio + numeros
         numeros += 1
-        
+
     print(f"O valor do somatório de {numero_max} é {somatorio}")
-    
+
 def fatorial():
-    
+
     contador = 1
     produto_acumulado = 1
     numero = int(input("Digite o número que você deseja fazer o fatorial: "))
@@ -73,8 +76,9 @@ def fatorial():
     while contador <= numero:
         produto_acumulado = produto_acumulado * contador
         contador += 1
-        
+
     print(f"O valor do fatorial de {numero} é {produto_acumulado}")
+
 
 while True:
     print("CALCULADORA")
